@@ -19,7 +19,7 @@ import {
 } from '@mui/material'
 import React from 'react'
 
-function Sidebar() {
+function Sidebar({ mode, setMode }) {
   return (
     <Box
       // bgcolor='skyblue'
@@ -91,7 +91,7 @@ function Sidebar() {
                 <ModeNight />
               </ListItemIcon>
               <Switch
-              // onChange={(e) => setMode(mode === 'light' ? 'dark' : 'light')}
+                onChange={(e) => setMode(mode === 'light' ? 'dark' : 'light')}
               />
             </ListItemButton>
           </ListItem>
