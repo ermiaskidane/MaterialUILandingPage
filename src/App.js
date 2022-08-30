@@ -7,7 +7,8 @@ import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <Box>
+  <ThemeProvider theme={darkTheme}>
+    <Box bgcolor={'background.default'} color={'text.primary'}>
       <Navbar />
       <Stack direction='row' spacing={2} justifyContent='space-between'>
         <Sidebar />
@@ -16,6 +17,7 @@ function App() {
       </Stack>
       <Add />
     </Box>
+  </ThemeProvider>
   )
 }
 
